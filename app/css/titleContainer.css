@@ -1,0 +1,51 @@
+body{
+    max-width: 1440px;
+    margin: 0px;
+    font-family: 'Overpass',
+    sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.headerContainer{
+    position: relative;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item{
+    height: 20px;
+    width: auto;
+}
+
+
+.crowdFund{
+    position: absolute;
+    margin-left: 11.5277%;
+}
+
+.about {
+    position: absolute;
+    margin-left: 79.8611%;
+}
+
+.discover {
+    position: absolute;
+    margin-left: 77.7777%;
+}
+
+.getStarted {
+    position: absolute;
+    margin-left: 83.6111%;
+}
+
+.backgroundImg{
+    width: 100%;
+    height: auto;
+    /* transform: translate(-8px,-82px); */
+    
+}
