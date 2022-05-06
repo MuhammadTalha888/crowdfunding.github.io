@@ -1,0 +1,7 @@
+.header{
+    background-image: url(/app/images/image-hero-desktop.jpg);
+    background-size: contain;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    height: 27.7778vw;
+}
