@@ -1,4 +1,4 @@
-.header{
+.header {
     background-image: url(/app/images/image-hero-desktop.jpg);
     background-size: contain;
     max-width: 100%;
@@ -6,64 +6,56 @@
     height: 27.7778vw;
 }
 
-.navFlex{
+.navFlex {
     display: flex;
     position: relative;
     top: 3.3333vw;
     height: 26px;
+    height: 1.8055vw;
     width: 100vw;
-    /* margin-top: 48px; */
-    /* border: 1px solid rgb(0, 0, 0); */
-
     color: var(--white);
     font-size: 16px;
 }
 
-.item1{
-     flex: 1;
-     margin-left: 11.52778vw; 
-     max-width: 8.8889vw;
-     cursor: pointer;
-     border: 1px solid red; */
-    /*
-    font-size: 18px;
-    font-weight: var(--weightLar);
-    /* //166px; */
+.item1 {
+    flex: 1;
+    margin-left: 11.52778vw;
+    max-width: 8.8889vw;
+    cursor: pointer;
+    font-size: 26px;
+    font-size: 1.8055vw;
+    font-weight: 600;
 }
 
-.item2{
+.item2 {
     flex: 1;
     margin-left: 52.5vw;
     max-width: 2.6389vw;
-    /*
-    /* 756px; */
-    border: 1px solid red;
-    /* cursor: pointer;
-    font-size: 16px; */ 
+    font-size: 12px;
+    font-size: 0.8333vw;
+    cursor: pointer;
+    position: relative;
+    padding-top: 0.2778vw;
 }
 
 .item3 {
-     flex: 1;
-     margin-left: 2.2222vw;
-     max-width: 3.6111vw;
-     /*
-     font-size: 16px;
-    cursor: pointer; */
-    /* 32px; */
-    border: 1px solid red;
+    flex: 1;
+    margin-left: 2.2222vw;
+    max-width: 3.6111vw;
+    font-size: 12px;
+    font-size: 0.8333vw;
+    cursor: pointer;
+    position: relative;
+    padding-top: 0.2778vw;
 }
 
 .item4 {
-     flex: 1;
-     margin-left: 2.3611vw; 
-     max-width: 4.7222vw;
-/* 
-    font-size: 16px;
-    cursor: pointer; */
-    /* 34px; */
-    border: 1px solid red; 
-}
-
-.navGrid div{
-    /* border: 1px solid rgb(82, 82, 82); */
+    flex: 1;
+    margin-left: 2.3611vw;
+    max-width: 6.7222vw;
+    font-size: 12px;
+    font-size: 0.8333vw;
+    cursor: pointer;
+    position: relative;
+    padding-top: 0.2778vw;
 }
