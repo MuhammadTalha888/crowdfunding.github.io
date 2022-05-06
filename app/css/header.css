@@ -9,9 +9,9 @@
 .navFlex{
     display: flex;
     position: relative;
-    top: 48px;
-    height: 48px;
-    width: auto;
+    top: 3.3333vw;
+    height: 26px;
+    width: 100vw;
     /* margin-top: 48px; */
     /* border: 1px solid rgb(0, 0, 0); */
 
@@ -20,44 +20,48 @@
 }
 
 .item1{
-    flex: 1;
-    max-width: 128px;
+     flex: 1;
+     margin-left: 11.52778vw; 
+     max-width: 8.8889vw;
+     cursor: pointer;
+     border: 1px solid red; */
+    /*
     font-size: 18px;
-    margin-left: 11.52778vw; 
     font-weight: var(--weightLar);
-    cursor: pointer;
     /* //166px; */
-    /* border: 1px solid red; */
 }
 
 .item2{
     flex: 1;
-    max-width: 40px;
     margin-left: 52.5vw;
+    max-width: 2.6389vw;
+    /*
     /* 756px; */
-    /* border: 1px solid red; */
-    cursor: pointer;
-    font-size: 16px;
+    border: 1px solid red;
+    /* cursor: pointer;
+    font-size: 16px; */ 
 }
 
 .item3 {
-    flex: 1;
-    max-width: 54px;
-    font-size: 16px;
-    margin-left: 2.2222vw;
-    cursor: pointer;
+     flex: 1;
+     margin-left: 2.2222vw;
+     max-width: 3.6111vw;
+     /*
+     font-size: 16px;
+    cursor: pointer; */
     /* 32px; */
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .item4 {
-    flex: 1;
-    max-width: 86px;
-    margin-left: 2.3611vw; 
+     flex: 1;
+     margin-left: 2.3611vw; 
+     max-width: 4.7222vw;
+/* 
     font-size: 16px;
-    cursor: pointer;
+    cursor: pointer; */
     /* 34px; */
-    /* border: 1px solid red;  */
+    border: 1px solid red; 
 }
 
 .navGrid div{

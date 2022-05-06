@@ -4,3 +4,9 @@
     font-size: var(--fontSize);
     font-family: 'Commissioner',sans-serif;
 }
+
+body{
+    background-color: var(--backgroundWhite);
+    height: 5000px;
+    /* background-color: black; */
+}
