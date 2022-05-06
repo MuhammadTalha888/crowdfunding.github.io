@@ -10,3 +10,7 @@ body{
     height: 5000px;
     /* background-color: black; */
 }
+
+p{
+    font-size: 16px;
+}
