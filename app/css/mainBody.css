@@ -3,7 +3,7 @@
     top: 21.3889vw;
     width: 730px;
     height: 1000px;
-    /* background-color: rgba(3, 3, 3, 0.548); */
+    background-color: rgba(3, 3, 3, 0.548);
     margin-left: 50%;
     transform: translateX(-50%);
 }
@@ -15,10 +15,12 @@
     transition: 0.5s;
 }
 
-.mainBody img:hover{
+.mainBody img:hover {
     transition: 0.3s;
     transform: translateX(-50%) translateY(-50%) translateY(-2px);
 }
+
+/* first title bar */
 
 .firstTitleBar {
     width: auto;
@@ -65,7 +67,7 @@
     /* background-color: rgba(0, 0, 0, 0.315); */
     /* text-justify: 10px; */
     /* word-spacing: 10px; */
-    letter-spacing: 10px;
+    letter-spacing: 3px;
 }
 
 .innerElements p {
@@ -133,15 +135,27 @@
     border-radius: 28px;
     background-color: var(--moderateCyan);
     background-image: url(/app/images/icon-bookmark.svg);
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
 
     /* background-color: #23278a;
         mix-blend-mode:hard-light; */
 }
 
-.bmlogo img{
+.bmlogo img {
     /* margin: 0px; */
     margin-top: 42px;
-        margin-left: 240px;
+    margin-left: 240px;
 }
 
+
+/* second title bar  */
+
+.secondTitleBar {
+    margin-top: 24px;
+    width: auto;
+    height: 212px;
+    background-color: var(--white);
+    border-radius: 14px;
+    /* box-shadow: 3px 3px 20px 0px rgb(0 0 0 / 20%); */
+    border: 1px solid rgb(235, 235, 235);
+}
