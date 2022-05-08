@@ -38,3 +38,10 @@ item4.addEventListener("mouseover", function handleMouseOver() {
 item4.addEventListener('mouseout', function handleMouseOut() {
     underline4.classList.remove('extended');
 });
+
+
+// onclick of the select reward button
+
+function selectRewardButtonClicked() { 
+    console.log('select reward button clicked');
+}

@@ -7,6 +7,10 @@
     border: 1px solid rgb(235, 235, 235);
 }
 
+.firstTitleBar p{
+    font-weight: 300;
+}
+
 /* .firstTitleBar h1{
     position: relative;
 
@@ -74,6 +78,7 @@
 .backThisProject p {
     color: var(--white);
     padding-top: 16px;
+    font-weight: 500;
 }
 
 .firstTitleBarFlexContainer {
@@ -103,6 +108,7 @@
     color: var(--moderateCyan);
     padding-left: 12px;
     padding-top: 16px;
+    font-weight: 500;
 }
 
 .bmlogo {
