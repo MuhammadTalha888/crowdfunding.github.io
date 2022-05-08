@@ -98,6 +98,12 @@
     transition: 0.5s;
 }
 
+.bookmark{
+    transition: 0.5s;
+    width: 182px;
+    margin-left: 248px;
+}
+
 .bookmarked:hover {
     transition: 0.1s;
     background-color: hsla(0, 0%, 48%, 0.199);
@@ -121,6 +127,10 @@
 
     /* background-color: #23278a;
         mix-blend-mode:hard-light; */
+}
+
+.bmlogoBookmark{
+    opacity: 70%;
 }
 
 .bmlogo img {

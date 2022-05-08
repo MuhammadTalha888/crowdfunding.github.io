@@ -1,7 +1,7 @@
 // underline hover coding
 var item1 = document.getElementById('item1');
 var underline1 = document.getElementById('underline1');
-item1.addEventListener("mouseover", function handleMouseOver() { 
+item1.addEventListener("mouseover", function handleMouseOver() {
     underline1.classList.add('underLineExtended');
 });
 item1.addEventListener('mouseout', function handleMouseOut() {
@@ -11,7 +11,7 @@ item1.addEventListener('mouseout', function handleMouseOut() {
 
 var item2 = document.getElementById('item2');
 var underline2 = document.getElementById('underline2');
-item2.addEventListener("mouseover", function handleMouseOver() { 
+item2.addEventListener("mouseover", function handleMouseOver() {
     underline2.classList.add('underLineExtended');
 });
 item2.addEventListener('mouseout', function handleMouseOut() {
@@ -21,7 +21,7 @@ item2.addEventListener('mouseout', function handleMouseOut() {
 
 var item3 = document.getElementById('item3');
 var underline3 = document.getElementById('underline3');
-item3.addEventListener("mouseover", function handleMouseOver() { 
+item3.addEventListener("mouseover", function handleMouseOver() {
     underline3.classList.add('underLineExtended');
 });
 item3.addEventListener('mouseout', function handleMouseOut() {
@@ -31,7 +31,7 @@ item3.addEventListener('mouseout', function handleMouseOut() {
 
 var item4 = document.getElementById('item4');
 var underline4 = document.getElementById('underline4');
-item4.addEventListener("mouseover", function handleMouseOver() { 
+item4.addEventListener("mouseover", function handleMouseOver() {
     console.log('here');
     underline4.classList.add('extended');
 });
@@ -42,6 +42,35 @@ item4.addEventListener('mouseout', function handleMouseOut() {
 
 // onclick of the select reward button
 
-function selectRewardButtonClicked() { 
+function selectRewardButtonClicked() {
     console.log('select reward button clicked');
+}
+
+
+// bookmarked animation 
+onceBookmarked = true;
+function bookmarkedButton() {
+    var bookmark = document.getElementsByClassName('bookmarked');
+    // bmlogoBookmark
+    var bmlogo = document.getElementsByClassName('bmlogo');
+
+    for (let i = 0; i < bookmark.length; i++) {
+        if (onceBookmarked) {
+            bookmark[i].classList.add('bookmark');
+            bmlogo[0].classList.add('bmlogoBookmark');
+            onceBookmarked = false;
+        }
+        else { 
+            bookmark[i].classList.remove('bookmark');
+            bmlogo[0].classList.remove('bmlogoBookmark');
+
+            onceBookmarked = true;
+        }
+        // bookmark[i].
+        // bookmark[i].toggleAttribute('bookmark');
+    }
+    // bookmark.classList.add("bookmark");
+    // bookmark.childList.add('bookmark');
+
+
 }
