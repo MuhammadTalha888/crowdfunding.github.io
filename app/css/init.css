@@ -7,7 +7,7 @@
 
 body{
     background-color: var(--backgroundWhite);
-    height: 5000px;
+    height: auto;
     /* background-color: black; */
 }
 
