@@ -32,7 +32,7 @@ item3.addEventListener('mouseout', function handleMouseOut() {
 var item4 = document.getElementById('item4');
 var underline4 = document.getElementById('underline4');
 item4.addEventListener("mouseover", function handleMouseOver() {
-    console.log('here');
+    // console.log('here');
     underline4.classList.add('extended');
 });
 item4.addEventListener('mouseout', function handleMouseOut() {
