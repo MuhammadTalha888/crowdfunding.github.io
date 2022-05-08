@@ -4,6 +4,8 @@
     max-width: 100%;
     background-repeat: no-repeat;
     height: 27.7778vw;
+    position: absolute;
+    z-index: -1;
 }
 
 .navFlex {
