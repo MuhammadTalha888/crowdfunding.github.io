@@ -52,7 +52,15 @@
     cursor: pointer;
 }
 
-.activeModelBarClicked{
+.activeModelBar .clickable {
+    /* transform: translateY(-100%); */
+    position: absolute;
+    width: 632px;
+    height: 184px;
+    /* background-color: rgba(0, 0, 0, 0.233); */
+}
+
+.activeModelBarClicked {
     border: 3px solid var(--moderateCyan);
 }
 
@@ -72,12 +80,12 @@
     margin-right: 24px;
 }
 
-.activeModelBar .flex .bar .barClicked{
+.activeModelBar .flex .bar .barClicked {
     width: 10px;
     height: 10px;
     border-radius: 25px;
     margin: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: var(--moderateCyan);
 }
 
@@ -209,6 +217,6 @@
     display: none;
 }
 
-.lowOpacity{
+.lowOpacity {
     opacity: 50%;
 }

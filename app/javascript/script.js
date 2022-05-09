@@ -93,8 +93,11 @@ function closeActiveModel() {
 
 // active model select logix
 
-function activeBarToggle(id) { 
-    
+function activeBarToggle(idNum) { 
+    // console.log(idNum);
+    var parentIds = document.getElementsByClassName('activeModelBar');
+    var id = parentIds[idNum];
+
     if (id.classList.contains('activeModelBarClicked')) {
 
         id.classList.remove('activeModelBarClicked');
@@ -138,11 +141,4 @@ function activeBarToggle(id) {
         inputBar[0].classList.add('hide');
 
     }
-    // console.log(inputBar);
-    // test[0].classList.add('pClicked');
-    // console.log(test[0]);
-    // pClicked add 
-    // barClicked unhide 
-    // line unhide 
-    // section unhide 
 }
