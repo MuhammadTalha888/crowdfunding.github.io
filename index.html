@@ -42,7 +42,7 @@
                 
                 <div class="firstTitleBarFlexContainer">
                     
-                    <div class="backThisProject">
+                    <div class="backThisProject" onclick="openActiveModel()">
                         <p>back this project</p>
                     </div>
 
@@ -98,7 +98,7 @@
                 <section class="secFlex">
                     <h1>101</h1>
                     <p>left</p>
-                    <div onclick="selectRewardButtonClicked()">
+                    <div onclick="openActiveModel()">
                         <p>Select Reward</p>
                     </div>
                 </section>
@@ -118,7 +118,7 @@
                 <section class="secFlex">
                     <h1>64</h1>
                     <p>left</p>
-                    <div onclick="selectRewardButtonClicked()">
+                    <div onclick="openActiveModel()">
                         <p>Select Reward</p>
                     </div>
                 </section>
@@ -137,7 +137,7 @@
                 <section class="secFlex">
                     <h1>0</h1>
                     <p>left</p>
-                    <div onclick="selectRewardButtonClicked()">
+                    <div>
                         <p>Select Reward</p>
                     </div>
                 </section>
@@ -148,7 +148,40 @@
     </section>
 
     <!-- active state model default -->
-    <section class="activeState"></section>
+    <section class="activeState hide">
+        <section class="optionsDiv">
+            <h1>Back this project</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellendus facere alias, blanditiis voluptatem, quaerat, cupiditate vitae obcaecati nam provident harum quasi voluptatum similique ut ipsa quisquam ullam molestias tempora!</p>
+
+            <!-- acive model first selector bar  -->
+            <section class="activeModelBar" id="firstActiveBar">
+                <section class="flex">
+                    <section class="bar"></section>
+                    <h1 class="h1First">Bamboo Stand</h1>
+                    <p class="pFirst">Pledge $25 or more</p>
+                    <h1 class="h1Sec">101</h1>
+                    <p class="pSec">left</p>
+                </section>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam laudantium amet voluptatem hic consequatur! Ipsam corrupti harum error pariatur.</p>
+
+                <section class="line"></section>
+
+                <section class="flexSec">
+                    <p class="first">Enter your pledge</p>
+                    <section class="moneyBtn flexMonBtn">
+                        <h1>$</h1>
+                        <p>25</p>
+                    </section>
+                    <section class="continueBtn">
+                        <p>Continue</p>
+                    </section>
+                </section>
+
+            </section>
+
+
+        </section>
+    </section>
 
 
 

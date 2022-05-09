@@ -42,9 +42,9 @@ item4.addEventListener('mouseout', function handleMouseOut() {
 
 // onclick of the select reward button
 
-function selectRewardButtonClicked() {
-    console.log('select reward button clicked');
-}
+// function selectRewardButtonClicked() {
+//     console.log('select reward button clicked');
+// }
 
 
 // bookmarked animation 
@@ -71,6 +71,14 @@ function bookmarkedButton() {
     }
     // bookmark.classList.add("bookmark");
     // bookmark.childList.add('bookmark');
+}
 
 
+// active state open on button pressed  
+function openActiveModel() { 
+    console.log('active button clicked');
+    var activeState = document.getElementsByClassName('activeState');
+    for (let i = 0; i < activeState.length; i++) {
+        activeState[i].classList.remove('hide');
+    }
 }

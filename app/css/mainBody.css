@@ -1,8 +1,9 @@
 .mainBody {
     position: absolute;
+    z-index: -1;
     top: 21.3889vw;
     width: 730px;
-    height: 1000px;
+    height: auto;
     /* background-color: rgba(3, 3, 3, 0.548); */
     margin-left: 50%;
     transform: translateX(-50%);
