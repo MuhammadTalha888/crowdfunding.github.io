@@ -35,13 +35,25 @@
     font-weight: 300;
 }
 
+.optionsDiv img {
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    cursor: pointer;
+}
+
 .activeModelBar {
     width: auto;
     height: auto;
+    margin-bottom: 24px;
     /* background-color: rgba(0, 0, 0, 0.185); */
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     cursor: pointer;
+}
+
+.activeModelBarClicked{
+    border: 3px solid var(--moderateCyan);
 }
 
 .activeModelBar .flex {
@@ -60,6 +72,15 @@
     margin-right: 24px;
 }
 
+.activeModelBar .flex .bar .barClicked{
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    margin: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--moderateCyan);
+}
+
 .activeModelBar .flex .h1First {
     /* margin-top: 34px; */
     font-weight: 500;
@@ -70,6 +91,10 @@
     font-size: 18px;
     color: var(--moderateCyan);
     font-weight: 400;
+}
+
+.activeModelBar .flex .pFirst.pClicked {
+    font-weight: 600;
 }
 
 .activeModelBar .flex .h1Sec {
@@ -103,10 +128,17 @@
 .activeModelBar .flexSec {
     display: flex;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .activeModelBar .flexSec .first {
     margin-top: 12px;
+}
+
+.activeModelBar .flexSec input {
+    margin-left: 76px;
+    border: none;
+    color: gray;
 }
 
 .moneyBtn {
@@ -127,7 +159,7 @@
     /* margin-top: 42px; */
     /* margin-left: 48px; */
     margin-left: 16px;
-        margin-right: 26px;
+    margin-right: 26px;
     border-radius: 28px;
     /* border: 1px solid rgba(0, 0, 0, 0.1); */
     background-color: var(--moderateCyan);
@@ -135,7 +167,7 @@
     transition: all 0.5s;
 }
 
-.continueBtn:hover{
+.continueBtn:hover {
     background-color: var(--darkCyan);
     transform: scale(1.01);
 }
@@ -175,4 +207,8 @@
 
 .hide {
     display: none;
+}
+
+.lowOpacity{
+    opacity: 50%;
 }

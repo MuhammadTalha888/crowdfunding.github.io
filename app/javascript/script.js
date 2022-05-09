@@ -82,3 +82,67 @@ function openActiveModel() {
         activeState[i].classList.remove('hide');
     }
 }
+
+function closeActiveModel() {
+    // console.log('active button clicked');
+    var activeState = document.getElementsByClassName('activeState');
+    for (let i = 0; i < activeState.length; i++) {
+        activeState[i].classList.add('hide');
+    }
+}
+
+// active model select logix
+
+function activeBarToggle(id) { 
+    
+    if (id.classList.contains('activeModelBarClicked')) {
+
+        id.classList.remove('activeModelBarClicked');
+    } else { 
+        id.classList.add('activeModelBarClicked');
+
+    }
+    
+    var pFirst = id.getElementsByClassName('flex')[0].getElementsByClassName('pFirst');
+    if (pFirst[0].classList.contains('pClicked')) {
+
+        pFirst[0].classList.remove('pClicked');
+    } else {
+        pFirst[0].classList.add('pClicked');
+
+    }
+
+    var barClicked = id.getElementsByClassName('flex')[0].getElementsByClassName('barClicked');
+    if (barClicked[0].classList.contains('hide')) {
+
+        barClicked[0].classList.remove('hide');
+    } else {
+        barClicked[0].classList.add('hide');
+
+    }
+
+    var line = id.getElementsByClassName('line');
+    if (line[0].classList.contains('hide')) {
+
+        line[0].classList.remove('hide');
+    } else {
+        line[0].classList.add('hide');
+
+    }
+
+    var inputBar = id.getElementsByClassName('toHideSection');
+    if (inputBar[0].classList.contains('hide')) {
+
+        inputBar[0].classList.remove('hide');
+    } else {
+        inputBar[0].classList.add('hide');
+
+    }
+    // console.log(inputBar);
+    // test[0].classList.add('pClicked');
+    // console.log(test[0]);
+    // pClicked add 
+    // barClicked unhide 
+    // line unhide 
+    // section unhide 
+}
