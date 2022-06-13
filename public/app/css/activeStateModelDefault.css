@@ -1,0 +1,222 @@
+.activeState {
+    background-color: rgba(0, 0, 0, 0.295);
+    width: auto;
+    /* position: absolute; */
+    height: 2100px;
+}
+
+.optionsDiv {
+    background-color: rgb(255, 255, 255);
+    /* position: fixed; */
+    padding-left: 48px;
+    padding-top: 54px;
+    padding-right: 48px;
+    padding-bottom: 48px;
+    width: 730px;
+    height: auto;
+    margin-left: 50%;
+    border-radius: 10px;
+    /* margin-top: 100px; */
+    box-sizing: border-box;
+    transform: translateX(-50%) translateY(150px);
+
+}
+
+.optionsDiv h1 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 26px;
+    font-weight: 600;
+}
+
+.optionsDiv p {
+    color: var(--darkGray);
+    margin-bottom: 38px;
+    font-weight: 300;
+}
+
+.optionsDiv img {
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.activeModelBar {
+    width: auto;
+    height: auto;
+    margin-bottom: 24px;
+    /* background-color: rgba(0, 0, 0, 0.185); */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.activeModelBar .clickable {
+    /* transform: translateY(-100%); */
+    position: absolute;
+    width: 632px;
+    height: 184px;
+    /* background-color: rgba(0, 0, 0, 0.233); */
+}
+
+.activeModelBarClicked {
+    border: 3px solid var(--moderateCyan);
+}
+
+.activeModelBar .flex {
+    display: flex;
+    margin-top: 34px;
+}
+
+.activeModelBar .flex .bar {
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    /* background-color: rgba(0, 0, 0, 0.281); */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 28px;
+    /* margin-top: 34px; */
+    margin-right: 24px;
+}
+
+.activeModelBar .flex .bar .barClicked {
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    margin: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--moderateCyan);
+}
+
+.activeModelBar .flex .h1First {
+    /* margin-top: 34px; */
+    font-weight: 500;
+}
+
+.activeModelBar .flex .pFirst {
+    margin-left: 18px;
+    font-size: 18px;
+    color: var(--moderateCyan);
+    font-weight: 400;
+}
+
+.activeModelBar .flex .pFirst.pClicked {
+    font-weight: 600;
+}
+
+.activeModelBar .flex .h1Sec {
+    margin-left: auto;
+    margin-right: 12px;
+    font-weight: 600;
+}
+
+.activeModelBar .flex .pSec {
+    margin-left: 0px;
+    margin-right: 24px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.activeModelBar p {
+    color: var(--darkGray);
+    font-weight: 300;
+
+    margin-left: 76px;
+    margin-bottom: 36px;
+}
+
+.activeModelBar .line {
+    width: auto;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.activeModelBar .flexSec {
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.activeModelBar .flexSec .first {
+    margin-top: 12px;
+}
+
+.activeModelBar .flexSec input {
+    margin-left: 76px;
+    border: none;
+    color: gray;
+}
+
+.moneyBtn {
+    width: 100px;
+    height: 48px;
+    /* margin-top: 42px; */
+    /* margin-left: 48px; */
+    margin-left: auto;
+    border-radius: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* background-color: var(--moderateCyan); */
+    cursor: pointer;
+}
+
+.continueBtn {
+    width: 108px;
+    height: 48px;
+    /* margin-top: 42px; */
+    /* margin-left: 48px; */
+    margin-left: 16px;
+    margin-right: 26px;
+    border-radius: 28px;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    background-color: var(--moderateCyan);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.continueBtn:hover {
+    background-color: var(--darkCyan);
+    transform: scale(1.01);
+}
+
+.continueBtn p {
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    /* margin-left: 19px; */
+    text-align: center;
+    margin-top: 12px;
+}
+
+.moneyBtn.flexMonBtn {
+    display: flex;
+    /* margin: 0;
+    padding: 0; */
+    /* padding-top: 16px; */
+}
+
+.moneyBtn h1 {
+    margin: 0;
+    margin-left: 26px;
+    margin-top: 12px;
+    padding: 0;
+    color: rgb(0 0 0 / 30%);
+}
+
+.moneyBtn p {
+    margin: 0;
+    padding: 0;
+    margin-top: 14px;
+    margin-left: 9px;
+    font-weight: 600;
+}
+
+
+.hide {
+    display: none;
+}
+
+.lowOpacity {
+    opacity: 50%;
+}

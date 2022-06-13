@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowd Funding Product Page</title>
+    <link rel="stylesheet" href="app/css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- background image and nav bar -->
+    <section class="header">
+        <nav class="navFlex">
+            <div class="item1" id="item1">crowdfund
+                <div class="underLine" id="underline1"></div>
+            </div>
+            <div class="item2" id="item2">About
+                <div class="underLine" id="underline2"></div>
+            </div>
+            <div class="item3" id="item3">Discover
+                <div class="underLine" id="underline3"></div>
+            </div>
+            <div class="item4" id="item4">Get Started
+                <div class="underLine last" id="underline4"></div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- the main body -->
+    <section class="mainBody">
+        <img src="app/images/logo-mastercraft.svg" alt="">
+        
+        <!-- first title bar -->
+        <section class="firstTitleBar">
+            <section class="innerElements">
+                <h1>Master Bamboo Monitor Riser</h1>
+                <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+                
+                <div class="firstTitleBarFlexContainer">
+                    
+                    <div class="backThisProject" onclick="openActiveModel()">
+                        <p>back this project</p>
+                    </div>
+
+                    <!-- <div class="bookmarked"> -->
+                    <div class="bookmarked" onclick="bookmarkedButton()">
+                        <div class="bmlogo"></div>
+                        <p>Bookmarked</p>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <!-- second title bar -->
+        <section class="secondTitleBar">
+            <section class="secondTitleBarFlex">
+                <section class="secTitBarFlexItem">
+                    <h1>$89,914</h1>
+                    <p>of $100,000 backed</p>
+                </section>
+                <section class="secTitBarFlexItem">
+                    <h1>5,007</h1>
+                    <p>total backers</p>
+                </section>
+                <section class="secTitBarFlexItem last">
+                    <h1>56</h1>
+                    <p>days left</p>
+                </section>
+            </section>
+            <section>
+                <section class="grayBar">
+                    <section class="greenBar"></section>
+                </section>
+            </section>
+        </section>
+        
+        <!-- about this project  -->
+
+        <section class="aboutThisProject">
+            <h1>About this project</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente dolorem sequi qui saepe sunt iure possimus aperiam quidem molestiae. Molestias iusto nam ipsum architecto officiis, dignissimos corrupti odit at tempora officiis, dignissimos corrupti odit at tempora officiis, dignissimos corrupti odit at tempora.</p>
+            <p>Officiis, dignissimos corrupti odit at tempora officiis, dignissimos corrupti odit at tempora officiis, dignissimos
+            corrupti odit at tempora.</p>
+
+            <section class="mainProductBar">
+
+                <!-- first bar  -->
+                <section class="flex">
+                    <h1>Bamboo Stand</h1>
+                    <p>Pledge $25 or more</p>
+                </section>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cumque quam commodi adipisci eligendi minus officiis, alias quo quaerat doloribus temporibus. Facere quaerat, deleniti excepturi sit aut eum tempora harum.</p>
+                <section class="secFlex">
+                    <h1>101</h1>
+                    <p>left</p>
+                    <div onclick="openActiveModel()">
+                        <p>Select Reward</p>
+                    </div>
+                </section>
+
+            </section>
+
+
+            <!-- second bar -->
+            <section class="mainProductBar">
+                <section class="flex">
+                    <h1>Black Edition Stand</h1>
+                    <p>Pledge $75 or more</p>
+                </section>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cumque quam commodi adipisci eligendi
+                    minus officiis, alias quo quaerat doloribus temporibus. Facere quaerat, deleniti excepturi sit aut eum tempora
+                    harum.</p>
+                <section class="secFlex">
+                    <h1>64</h1>
+                    <p>left</p>
+                    <div onclick="openActiveModel()">
+                        <p>Select Reward</p>
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- third bar  -->
+            <section class="mainProductBar last">
+                <section class="flex">
+                    <h1>Mahogany Special Edition</h1>
+                    <p>Pledge $200 or more</p>
+                </section>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cumque quam commodi adipisci eligendi
+                    minus officiis, alias quo quaerat doloribus temporibus. Facere quaerat, deleniti excepturi sit aut eum tempora
+                    harum.</p>
+                <section class="secFlex">
+                    <h1>0</h1>
+                    <p>left</p>
+                    <div>
+                        <p>Select Reward</p>
+                    </div>
+                </section>
+            </section>
+
+
+        </section>
+    </section>
+
+    <!-- active state model default -->
+    <section class="activeState hide">
+        <section class="optionsDiv">
+            <img src="app/images/icon-close-modal.svg" onclick="closeActiveModel()">
+            <h1>Back this project</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur repellendus facere alias, blanditiis voluptatem, quaerat, cupiditate vitae obcaecati nam provident harum quasi voluptatum similique ut ipsa quisquam ullam molestias tempora!</p>
+ 
+            <!-- acive model first selector bar  -->
+            <section class="activeModelBar" id="firstActiveBar" >
+                <section class="clickable" onclick="activeBarToggle(0)"></section>
+
+                <section class="flex">
+                    <section class="bar">
+                        <section class="barClicked hide"></section>
+                    </section>
+                    <h1 class="h1First">Bamboo Stand</h1>
+                    <p class="pFirst ">Pledge $25 or more</p>
+                    <h1 class="h1Sec">101</h1>
+                    <p class="pSec">left</p>
+                </section>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam laudantium amet voluptatem hic consequatur! Ipsam corrupti harum error pariatur.</p>
+
+
+                <section class="line hide"></section>
+
+                <section class="toHideSection hide">
+
+                    <section class="flexSec">
+                        <input type="number" placeholder="Enter your pledge">
+                        <!-- <p class="first">Enter your pledge</p> -->
+                        <section class="moneyBtn flexMonBtn">
+                            <h1>$</h1>
+                            <p>25</p>
+                        </section>
+                        <section class="continueBtn">
+                            <p>Continue</p>
+                        </section>
+                    </section>
+                </section>
+
+            </section>
+
+
+            <!-- acive model second selector bar  -->
+            <section class="activeModelBar">
+                <section class="clickable" onclick="activeBarToggle(1)"></section>
+            
+                <section class="flex">
+                    <section class="bar">
+                        <section class="barClicked hide"></section>
+                    </section>
+                    <h1 class="h1First">Black Edition Stand</h1>
+                    <p class="pFirst ">Pledge $75 or more</p>
+                    <h1 class="h1Sec">64</h1>
+                    <p class="pSec">left</p>
+                </section>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam laudantium amet voluptatem hic consequatur!
+                    Ipsam corrupti harum error pariatur.</p>
+            
+            
+                <section class="line hide"></section>
+            
+                <section class="toHideSection hide">
+            
+                    <section class="flexSec">
+                        <input type="number" placeholder="Enter your pledge">
+                        <!-- <p class="first">Enter your pledge</p> -->
+                        <section class="moneyBtn flexMonBtn">
+                            <h1>$</h1>
+                            <p>75</p>
+                        </section>
+                        <section class="continueBtn">
+                            <p>Continue</p>
+                        </section>
+                    </section>
+                </section>
+            
+            </section>
+        
+            <!-- acive model third selector bar  -->
+            <section class="activeModelBar">
+                <section class="clickable" onclick="activeBarToggle(2)"></section>
+            
+                <section class="flex">
+                    <section class="bar">
+                        <section class="barClicked hide"></section>
+                    </section>
+                    <h1 class="h1First">Pledge with no reward</h1>
+                    <p class="pFirst "></p>
+                    <h1 class="h1Sec"></h1>
+                    <p class="pSec"></p>
+                </section>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam laudantium amet voluptatem hic consequatur!
+                    Ipsam corrupti harum error pariatur.</p>
+            
+            
+                <section class="line hide"></section>
+            
+                <section class="toHideSection hide">
+            
+                    <section class="flexSec">
+                        <input type="number" placeholder="Enter your pledge">
+                        <!-- <p class="first">Enter your pledge</p> -->
+                        <section class="moneyBtn flexMonBtn">
+                            <h1>$</h1>
+                            <p>any</p>
+                        </section>
+                        <section class="continueBtn">
+                            <p>Continue</p>
+                        </section>
+                    </section>
+                </section>
+            
+            </section>
+
+
+        </section>
+    </section>
+
+
+
+    <script src="app/javascript/script.js"></script>
+</body>
+</html>
